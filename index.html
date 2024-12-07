@@ -5,84 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Drag's Educational Services</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic resets */
+        body, html {
             margin: 0;
             padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            height: 100%; /* Make the body take full height */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
 
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            border-radius: 10px;
+        /* Container for your content */
+        .content {
+            height: 1500px; /* Ensure there is enough content to scroll */
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Style for the Panic Button */
-        .panic-button {
-            width: 560px;
-            height: 446px;
-            background-color: #ff0000; /* Red color */
-            color: white;
-            font-size: 36px;
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
         }
 
-        .panic-button:hover {
-            background-color: darkred; /* Hover effect */
+        .header {
+            margin-top: 50px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #4CAF50;
         }
 
-        /* Message Section Styling */
-        .message {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-left: 30px; /* Space between button and message */
-        }
-
-        .message h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .message p {
-            margin-top: 10px;
-            font-size: 22px;
+        .subheader {
+            font-size: 25px;
             color: #555;
+        }
+
+        .button-container {
+            margin-top: 50px;
+        }
+
+        .panic-button {
+            background-color: red;
+            color: white;
+            font-size: 24px;
+            padding: 60px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-decoration: none; /* To remove the default link styling */
+            display: inline-block;
+            width: 560px;
+            height: 446px;
+            text-align: center;
+            line-height: 320px; /* Center text vertically */
+        }
+
+        .panic-button:hover {
+            background-color: darkred; /* Darker red when hovered */
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Panic Button (Clickable to Google Classroom) -->
-        <a href="https://classroom.google.com" target="_blank">
-            <button class="panic-button">Panic Button</button>
-        </a>
+    <div class="content">
+        <div class="header">
+            Welcome to Drag's Educational Services!
+        </div>
+        <div class="subheader">
+            Your "learning hub" for all educational needs.
+        </div>
 
-        <!-- Welcome Message -->
-        <div class="message">
-            <h1>Welcome to Drag's Educational Services!</h1>
-            <p>Providing quality education and learning support.</p>
+        <div class="button-container">
+            <!-- The panic button now links to Google Classroom -->
+            <a href="https://classroom.google.com" target="_blank" class="panic-button">
+                GO TO GOOGLE CLASSROOM
+            </a>
         </div>
     </div>
 
 </body>
 </html>
-
