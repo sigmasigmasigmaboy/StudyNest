@@ -26,10 +26,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        /* Style for the Panic Button */
         .panic-button {
-            position: absolute;
-            left: 10px;
-            top: 10px;
             padding: 10px 15px;
             background-color: red;
             color: white;
@@ -37,14 +35,14 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-right: 20px; /* Space between button and text */
         }
 
+        /* Message Section Styling */
         .message {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+            align-items: flex-start;
         }
 
         .message h1 {
@@ -62,10 +60,13 @@
 <body>
 
     <div class="container">
-        <button class="panic-button">Panic Button</button>
+        <!-- Panic Button -->
+        <button class="panic-button" onclick="alert('Panic Button Clicked!')">Panic Button</button>
+
+        <!-- Welcome Message -->
         <div class="message">
             <h1>Welcome to Drag's Educational Services!</h1>
-            <p>Your "learning hub" for all educational needs</p>
+            <p>Providing quality education and learning support.</p>
         </div>
     </div>
 
