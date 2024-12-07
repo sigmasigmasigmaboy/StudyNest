@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Drag's Educational Services</title>
     <style>
-        /* Basic resets */
-        body, html {
+        /* Ensure the body and html take full height and allow scrolling */
+        html, body {
+            height: 100%;  /* Make sure the body covers the full height */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            height: 100%; /* Make the body take full height */
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-            overflow-y: auto; /* Enable vertical scrolling */
         }
 
-        /* Container for your content */
+        /* Allow scrolling if the content overflows the viewport */
+        body {
+            overflow-y: auto;  /* Enable vertical scrolling */
+        }
+
         .content {
-            height: 1500px; /* Ensure there is enough content to scroll */
+            min-height: 1500px;  /* Ensure there is enough content to scroll */
             padding: 20px;
             text-align: center;
         }
@@ -46,16 +48,16 @@
             border: none;
             border-radius: 15px;
             cursor: pointer;
-            text-decoration: none; /* To remove the default link styling */
+            text-decoration: none;  /* Remove default link styling */
             display: inline-block;
             width: 560px;
             height: 446px;
             text-align: center;
-            line-height: 320px; /* Center text vertically */
+            line-height: 320px;  /* Center text vertically */
         }
 
         .panic-button:hover {
-            background-color: darkred; /* Darker red when hovered */
+            background-color: darkred;  /* Darker red when hovered */
         }
     </style>
 </head>
@@ -79,3 +81,4 @@
 
 </body>
 </html>
+
