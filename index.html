@@ -28,14 +28,20 @@
 
         /* Style for the Panic Button */
         .panic-button {
-            padding: 10px 15px;
+            padding: 20px 30px;
             background-color: red;
             color: white;
+            font-size: 24px;
             font-weight: bold;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
-            margin-right: 20px; /* Space between button and text */
+            margin-right: 30px; /* Space between button and text */
+            transition: background-color 0.3s ease;
+        }
+
+        .panic-button:hover {
+            background-color: darkred; /* Hover effect */
         }
 
         /* Message Section Styling */
@@ -47,12 +53,12 @@
 
         .message h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 36px;
         }
 
         .message p {
             margin-top: 10px;
-            font-size: 20px;
+            font-size: 22px;
             color: #555;
         }
     </style>
@@ -61,7 +67,9 @@
 
     <div class="container">
         <!-- Panic Button -->
-        <button class="panic-button" onclick="alert('Panic Button Clicked!')">Panic Button</button>
+        <a href="https://classroom.google.com" target="_blank">
+            <button class="panic-button">Panic Button</button>
+        </a>
 
         <!-- Welcome Message -->
         <div class="message">
